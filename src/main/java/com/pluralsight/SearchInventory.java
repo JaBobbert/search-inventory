@@ -18,8 +18,11 @@ public class SearchInventory {
             System.out.println(product);
         }
 
-        System.out.println("Sorted Version");
-        Collections.sort(inventory, Comparator.comparing(Product::getName));
+        System.out.println();
+        System.out.println("Sorted Version by ID");
+        System.out.println();
+
+        Collections.sort(inventory, Comparator.comparing(Product::getId));
         for (int i = 0; i < inventory.size() ; i++) {
             System.out.println((i+1) + ". " + inventory.get(i));
 
