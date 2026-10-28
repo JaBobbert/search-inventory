@@ -47,6 +47,7 @@ public class SearchInventory {
             System.err.println("Something is not correct " + e.getMessage());
         }
 
+
         for (String[] row : records){
             System.out.println(java.util.Arrays.toString(row));
         }
